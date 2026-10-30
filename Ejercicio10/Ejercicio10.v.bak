@@ -1,0 +1,30 @@
+module Ejercicio10 (ix,iy,iCLK,iRST); 
+	input ix,iCLK,iRST; 
+	output reg oy; 
+	reg [1:0] Prstate, Nxtstate; 
+	parameter S0 = 2'b00, S1 = 2'b01, S2 = 2'b10, S3 = 2'b11; 
+
+
+	//Restablece el circuito al estado inicial S0=00 y especifica la operación sincrónica con reloj 
+	always @ (posedge iCLK or negedge iRST) 
+		if (~iRST) Prstate = S0;		//Iniciar en estado S0 (reset) 
+		else Prstate = Nxtstate;		//Operaciones de reloj (actualizar estado) 
+
+	//Determinar el siguiente estado 
+	always @ (Prstate or ix) 
+		case (Prstate) 
+			S0:	if (ix) Nxtstate = S1; else Nxtstate = S0; 
+			S1:	if (ix) Nxtstate = S3; else Nxtstate = S0; 
+			S2:	if (~ix)Nxtstate = S0; else Nxtstate = S2; 
+			S3:	if (ix) Nxtstate = S2; else Nxtstate = S0; 
+		endcase 
+
+	//Evaluar la salida 
+	always @ (Prstate or ix) 
+		case (Prstate) 
+			S0: oy = 0; 
+			S1:	if (ix) oy = 1'b0; else oy = 1'b1; 
+			S2:	if (ix) oy = 1'b0; else oy = 1'b1; 
+			S3:	if (ix) oy = 1'b0; else oy = 1'b1; 
+		endcase 
+endmodule 

@@ -1,0 +1,101 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'CLK'
+Slack : -2.635
+TNS   : -36.848
+
+Type  : Slow 1100mV 85C Model Setup 'contador[10]'
+Slack : -1.936
+TNS   : -25.059
+
+Type  : Slow 1100mV 85C Model Hold 'CLK'
+Slack : -4.869
+TNS   : -55.066
+
+Type  : Slow 1100mV 85C Model Hold 'contador[10]'
+Slack : 0.191
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'contador[10]'
+Slack : -0.538
+TNS   : -23.860
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLK'
+Slack : -0.538
+TNS   : -11.669
+
+Type  : Slow 1100mV 0C Model Setup 'CLK'
+Slack : -2.658
+TNS   : -37.161
+
+Type  : Slow 1100mV 0C Model Setup 'contador[10]'
+Slack : -1.977
+TNS   : -25.744
+
+Type  : Slow 1100mV 0C Model Hold 'CLK'
+Slack : -4.815
+TNS   : -55.065
+
+Type  : Slow 1100mV 0C Model Hold 'contador[10]'
+Slack : 0.200
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'contador[10]'
+Slack : -0.538
+TNS   : -23.862
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -0.538
+TNS   : -11.478
+
+Type  : Fast 1100mV 85C Model Setup 'CLK'
+Slack : -0.783
+TNS   : -10.954
+
+Type  : Fast 1100mV 85C Model Setup 'contador[10]'
+Slack : -0.583
+TNS   : -2.671
+
+Type  : Fast 1100mV 85C Model Hold 'CLK'
+Slack : -2.183
+TNS   : -25.859
+
+Type  : Fast 1100mV 85C Model Hold 'contador[10]'
+Slack : 0.031
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLK'
+Slack : -0.306
+TNS   : -4.399
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'contador[10]'
+Slack : 0.141
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'CLK'
+Slack : -0.646
+TNS   : -9.037
+
+Type  : Fast 1100mV 0C Model Setup 'contador[10]'
+Slack : -0.498
+TNS   : -1.996
+
+Type  : Fast 1100mV 0C Model Hold 'CLK'
+Slack : -2.151
+TNS   : -26.358
+
+Type  : Fast 1100mV 0C Model Hold 'contador[10]'
+Slack : 0.030
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -0.300
+TNS   : -4.315
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'contador[10]'
+Slack : 0.140
+TNS   : 0.000
+
+------------------------------------------------------------

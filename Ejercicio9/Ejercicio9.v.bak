@@ -1,0 +1,26 @@
+module Ejercicio9 (iJ, iK, iCLK, oQ, oQnot); 
+	output oQ, oQnot; 
+	input iJ, iK, iCLK; 
+	reg rQ; 
+	assign oQnot = ~rQ,  
+	assign oQ = rQ; 
+	always @(posedge iCLK) 
+	begin 
+				if ((iJ == 0) && (iK == 0)) 
+				begin 
+						rQ = rQ; 
+				end 
+				else if ((iJ == 1) && (iK == 0)) 
+				begin 
+						rQ = 1'b1; 
+				end 
+				else if ((iJ == 0) && (iK == 1)) 
+				begin 
+						rQ = 1'b0; 
+				end 
+				else if ((iJ == 1) && (iK == 1)) 
+				begin 
+						rQ = ~rQ; 
+				end 
+		end 
+endmodule

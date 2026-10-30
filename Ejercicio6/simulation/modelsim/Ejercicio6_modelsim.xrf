@@ -1,0 +1,12 @@
+vendor_name = ModelSim
+source_file = 1, C:/codigos/Practica3/Ejercicio6/Ejercicio6.v
+source_file = 1, C:/codigos/Practica3/Ejercicio6/db/Ejercicio6.cbx.xml
+design_name = Ejercicio6
+instance = comp, \oQ~output , oQ~output, Ejercicio6, 1
+instance = comp, \iCLK~input , iCLK~input, Ejercicio6, 1
+instance = comp, \iT~input , iT~input, Ejercicio6, 1
+instance = comp, \D1|Q~0 , D1|Q~0, Ejercicio6, 1
+instance = comp, \D1|Q~feeder , D1|Q~feeder, Ejercicio6, 1
+instance = comp, \iRST~input , iRST~input, Ejercicio6, 1
+instance = comp, \D1|Q , D1|Q, Ejercicio6, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, Ejercicio6, 1

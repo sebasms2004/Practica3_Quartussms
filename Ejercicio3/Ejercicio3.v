@@ -1,0 +1,8 @@
+module Ejercicio3 (oQ, iD, icontrol); 
+			output oQ; 
+			input iD, icontrol; 
+			reg oQ; 
+		
+			always @ (icontrol or iD) 
+					if (icontrol) oQ = iD;			//Es igual a: if (control == 1) 
+endmodule 
